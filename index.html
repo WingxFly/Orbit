@@ -54,7 +54,7 @@
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <i class="fas fa-gamepad text-2xl text-orbit-primary"></i>
+                    <img src="https://raw.githubusercontent.com/Wingx1071/Orbit/refs/heads/main/logo.webp" alt="Orbit Logo" class="h-6">
                     <span class="text-xl font-bold">Orbit</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
@@ -78,12 +78,18 @@
     <!-- Hero Section -->
     <section class="gradient-bg py-20 md:py-32">
         <div class="container mx-auto px-6 text-center">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    <span class="text-orbit-primary">Orbit</span> Gaming Tool
+            <div class="flex items-center justify-center space-x-4 mb-6">
+                <img src="https://raw.githubusercontent.com/Wingx1071/Orbit/refs/heads/main/logo.webp" 
+     alt="Orbit Logo" 
+     class="h-16 self-center mt-1">
+
+                <h1 class="text-4xl md:text-6xl font-bold">
+                  <span class="text-orbit-primary">Orbit</span>
+                </h1>
+              </div>
                 </h1>
                 <p class="text-xl md:text-2xl mb-10 opacity-90">
-                    Experience gaming freedom with Orbit.
+                    Best CS2 kernel cheat available in the Market.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
                     <a href="https://discord.gg/ennxDRTF" class="bg-orbit-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-md font-bold text-lg transition flex items-center justify-center space-x-3">
@@ -102,13 +108,14 @@
     <section class="py-16 bg-gray-800">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-6">Powerful Gaming Tool</h2>
+                <h2 class="text-3xl font-bold mb-6">Orbit safe to use?</h2>
                 <p class="text-lg mb-8 opacity-90">
-                    Orbit is a powerful tool built for gamers who want maximum control, no downtime, and zero ads. 
-                    Easy to install, constantly updated, and built to support the community.
+                    It only reads memory using a kernel driver.
+This means it does not change the game in any way.
+So, there's no risk of getting banned on VAC-secured servers.
                 </p>
                 <p class="text-lg font-medium text-orbit-accent">
-                    The free version is always available.
+                    The free version is also undetectable.
                 </p>
             </div>
         </div>
@@ -215,6 +222,10 @@
                             <li class="flex items-center">
                                 <i class="fas fa-check text-orbit-accent mr-2"></i>
                                 <span>Regular updates</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Free version</span>
                             </li>
                         </ul>
                     </div>
@@ -397,14 +408,13 @@
     <!-- Video Demo Section -->
     <section id="video" class="py-16 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Watch Orbit in Action</h2>
+            <h2 class="text-3xl font-bold text-center mb-12"> Watch About Orbit</h2>
             
             <div class="max-w-4xl mx-auto">
                 <div class="video-container rounded-lg overflow-hidden shadow-2xl">
                     <iframe src="https://www.youtube.com/embed/L8n1uJu00FA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="mt-4 text-center">
-                    <p class="text-sm opacity-80">From our YouTube channel: <span class="font-medium">https://youtube.com/@officialzapy</span></p>
                 </div>
             </div>
         </div>
@@ -422,7 +432,6 @@
                     <i class="fab fa-discord text-2xl"></i>
                     <span>Join Discord Server</span>
                 </a>
-                <p class="mt-4 text-sm opacity-80">https://discord.gg/ennxDRTF</p>
             </div>
         </div>
     </section>
@@ -439,7 +448,6 @@
                     <i class="fas fa-book text-2xl"></i>
                     <span>View API Documentation</span>
                 </a>
-                <p class="mt-4 text-sm opacity-80">https://orbit.developerhub.io/orbit/orbit-api-documentation</p>
             </div>
         </div>
     </section>
@@ -469,7 +477,7 @@
                     <h3 class="text-xl font-bold mb-3">How do I update my grenade dataset?</h3>
                     <div class="space-y-2">
                         <p>Go to: <code class="bg-gray-700 px-2 py-1 rounded">AppData/Roaming/Orbit/GrenadeHelper.txt</code></p>
-                        <p>Append new spots manually from channels like <code class="bg-gray-700 px-2 py-1 rounded">#1262829469643706529</code></p>
+                        <p>Append new spots manually from channels like <code class="bg-gray-700 px-2 py-1 rounded"> #nadehelper-data</code></p>
                         <p>If corrupted, delete the file. Orbit will re-download the default dataset.</p>
                         <p>Or, place a <code class="bg-gray-700 px-2 py-1 rounded">GrenadeHelper.txt</code> next to <code class="bg-gray-700 px-2 py-1 rounded">Orbit.exe</code> (won't be deleted during updates).</p>
                     </div>
@@ -488,8 +496,10 @@
                 
                 <!-- FAQ Item 3 -->
                 <div class="bg-gray-900 rounded-lg p-6">
-                    <h3 class="text-xl font-bold mb-3">Orbit unloads after connecting to a game?</h3>
+                    <h3 class="text-xl font-bold mb-3">Any fixes for "This app can't run on your PC"?</h3>
                     <div class="space-y-2">
-                        <p>Most likely an outdated nade dataset.</p>
-                        <p>Fix link: <code class="bg-gray-700 px-2 py-1 rounded">https://discord.com/ch
-</html>
+                        <p>Go to: Windows Security → Virus & threat protection → Manage Settings → Add an Exclusion → Folder </p>
+                        <p>Navigate to the Folder Path <code class="bg-gray-700 px-2 py-1 rounded">C:\Users\<YourUsername>\AppData\Roaming\Orbit
+                        </code></p>
+                        <p> Confirm the Selection Then: <code class="bg-gray-700 px-2 py-1 rounded"> Restart your PC </code></p>
+                        </html>
