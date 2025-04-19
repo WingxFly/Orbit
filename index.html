@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit - Experience gaming freedom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orbit: {
+                            primary: '#5865F2',
+                            dark: '#1E1F22',
+                            light: '#F2F3F5',
+                            accent: '#23A559',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1E1F22 0%, #2B2D31 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .pricing-card:hover {
+            transform: scale(1.03);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-orbit-dark text-orbit-light font-sans">
+    <!-- Navigation -->
+    <nav class="gradient-bg sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-gamepad text-2xl text-orbit-primary"></i>
+                    <span class="text-xl font-bold">Orbit</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="hover:text-orbit-primary transition">Features</a>
+                    <a href="#pricing" class="hover:text-orbit-primary transition">Pricing</a>
+                    <a href="#video" class="hover:text-orbit-primary transition">Demo</a>
+                    <a href="#community" class="hover:text-orbit-primary transition">Community</a>
+                    <a href="#docs" class="hover:text-orbit-primary transition">API Docs</a>
+                </div>
+                <a href="https://discord.gg/ennxDRTF" class="bg-orbit-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-md font-medium transition flex items-center space-x-2">
+                    <i class="fab fa-discord"></i>
+                    <span>Login with Discord</span>
+                </a>
+                <button class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="text-orbit-primary">Orbit</span> Gaming Tool
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 opacity-90">
+                    Experience gaming freedom with Orbit.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://discord.gg/ennxDRTF" class="bg-orbit-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-md font-bold text-lg transition flex items-center justify-center space-x-3">
+                        <i class="fab fa-discord text-2xl"></i>
+                        <span>Login with Discord</span>
+                    </a>
+                    <a href="#features" class="bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 rounded-md font-bold text-lg transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Powerful Gaming Tool</h2>
+                <p class="text-lg mb-8 opacity-90">
+                    Orbit is a powerful tool built for gamers who want maximum control, no downtime, and zero ads. 
+                    Easy to install, constantly updated, and built to support the community.
+                </p>
+                <p class="text-lg font-medium text-orbit-accent">
+                    The free version is always available.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Orbit Premium – Features & Benefits</h2>
+            <p class="text-center mb-12 max-w-2xl mx-auto">
+                Support the developer and get access to Orbit Premium with these exclusive benefits:
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-orbit-primary text-3xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">No forced updates</h3>
+                    <p class="opacity-90">
+                        Use your downloaded version as long as you want without being forced to update.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-orbit-primary text-3xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">No downtime</h3>
+                    <p class="opacity-90">
+                        Offsets update through server automatically ensuring you're always ready to play.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-orbit-primary text-3xl mb-4">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">No ads</h3>
+                    <p class="opacity-90">
+                        Skip Linkvertise and OTP verification - just launch and play.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-orbit-primary text-3xl mb-4">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Beta access</h3>
+                    <p class="opacity-90">
+                        Try beta features early and help shape the future of Orbit.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-orbit-primary text-3xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Priority support</h3>
+                    <p class="opacity-90">
+                        Fast help and direct developer response when you need assistance.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gray-800 p-6 rounded-lg transition duration-300">
+                    <div class="text-orbit-primary text-3xl mb-4">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Thank you bonus</h3>
+                    <p class="opacity-90">
+                        Support the developer (coffee appreciated!) and keep Orbit thriving.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Simple, Transparent Pricing</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 max-w-6xl mx-auto">
+                <!-- Free Plan -->
+                <div class="pricing-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Free Plan</h3>
+                        <p class="text-3xl font-bold mb-4">€0.00</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Basic features</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Community support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Regular updates</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <a href="https://discord.gg/ennxDRTF" class="block w-full bg-gray-700 hover:bg-gray-600 text-white text-center py-3 rounded-md font-medium transition">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 3 Days -->
+                <div class="pricing-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">3 Days</h3>
+                        <p class="text-3xl font-bold mb-4">€1.19</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>All premium features</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>3 day access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Priority support</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <a href="https://discord.gg/ennxDRTF" class="block w-full bg-orbit-primary hover:bg-opacity-90 text-white text-center py-3 rounded-md font-medium transition">
+                            Upgrade Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 1 Month -->
+                <div class="pricing-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300 border-2 border-orbit-primary">
+                    <div class="absolute top-0 right-0 bg-orbit-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                        POPULAR
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">1 Month</h3>
+                        <p class="text-3xl font-bold mb-4">€3.49</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>All premium features</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>30 day access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Priority support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Beta access</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <a href="https://discord.gg/ennxDRTF" class="block w-full bg-orbit-primary hover:bg-opacity-90 text-white text-center py-3 rounded-md font-medium transition">
+                            Upgrade Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 3 Months -->
+                <div class="pricing-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">3 Months</h3>
+                        <p class="text-3xl font-bold mb-4">€9.99</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>All premium features</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>90 day access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Priority support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Beta access</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <a href="https://discord.gg/ennxDRTF" class="block w-full bg-orbit-primary hover:bg-opacity-90 text-white text-center py-3 rounded-md font-medium transition">
+                            Upgrade Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 1 Year -->
+                <div class="pricing-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">1 Year</h3>
+                        <p class="text-3xl font-bold mb-4">€29.99</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>All premium features</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>365 day access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Priority support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Beta access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Special badge</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <a href="https://discord.gg/ennxDRTF" class="block w-full bg-orbit-primary hover:bg-opacity-90 text-white text-center py-3 rounded-md font-medium transition">
+                            Upgrade Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lifetime -->
+                <div class="pricing-card bg-gray-900 rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lifetime</h3>
+                        <p class="text-3xl font-bold mb-4">€74.99</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>All premium features</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Permanent access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Priority support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Beta access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>VIP badge</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-orbit-accent mr-2"></i>
+                                <span>Special recognition</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <a href="https://discord.gg/ennxDRTF" class="block w-full bg-orbit-primary hover:bg-opacity-90 text-white text-center py-3 rounded-md font-medium transition">
+                            Upgrade Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo Section -->
+    <section id="video" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Watch Orbit in Action</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="video-container rounded-lg overflow-hidden shadow-2xl">
+                    <iframe src="https://www.youtube.com/embed/L8n1uJu00FA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-sm opacity-80">From our YouTube channel: <span class="font-medium">https://youtube.com/@officialzapy</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Join the Orbit Community</h2>
+                <p class="text-lg mb-8 opacity-90">
+                    Get support, updates, and chat with other users in our active Discord community.
+                </p>
+                <a href="https://discord.gg/ennxDRTF" class="inline-flex items-center justify-center bg-orbit-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-md font-bold text-lg transition space-x-3">
+                    <i class="fab fa-discord text-2xl"></i>
+                    <span>Join Discord Server</span>
+                </a>
+                <p class="mt-4 text-sm opacity-80">https://discord.gg/ennxDRTF</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Docs Section -->
+    <section id="docs" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Official Lua API Documentation</h2>
+                <p class="text-lg mb-8 opacity-90">
+                    Create custom scripts and tools using Orbit's powerful Lua API. Extend functionality and tailor Orbit to your specific needs.
+                </p>
+                <a href="https://orbit.developerhub.io/orbit/orbit-api-documentation" class="inline-flex items-center justify-center bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 rounded-md font-bold text-lg transition space-x-3">
+                    <i class="fas fa-book text-2xl"></i>
+                    <span>View API Documentation</span>
+                </a>
+                <p class="mt-4 text-sm opacity-80">https://orbit.developerhub.io/orbit/orbit-api-documentation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Experience Gaming Freedom?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+                The free version is always available. Premium unlocks the best experience with additional features and benefits.
+            </p>
+            <a href="https://discord.gg/ennxDRTF" class="inline-flex items-center justify-center bg-orbit-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-md font-bold text-lg transition space-x-3">
+                <i class="fab fa-discord text-2xl"></i>
+                <span>Get Started with Discord</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">FAQ / Troubleshooting</h2>
+            
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-900 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">How do I update my grenade dataset?</h3>
+                    <div class="space-y-2">
+                        <p>Go to: <code class="bg-gray-700 px-2 py-1 rounded">AppData/Roaming/Orbit/GrenadeHelper.txt</code></p>
+                        <p>Append new spots manually from channels like <code class="bg-gray-700 px-2 py-1 rounded">#1262829469643706529</code></p>
+                        <p>If corrupted, delete the file. Orbit will re-download the default dataset.</p>
+                        <p>Or, place a <code class="bg-gray-700 px-2 py-1 rounded">GrenadeHelper.txt</code> next to <code class="bg-gray-700 px-2 py-1 rounded">Orbit.exe</code> (won't be deleted during updates).</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-900 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">Can't see the menu?</h3>
+                    <div class="space-y-2">
+                        <p>Let CS2 fully load before starting Orbit</p>
+                        <p>Path: <code class="bg-gray-700 px-2 py-1 rounded">Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\bin\win64\cs2.exe</code></p>
+                        <p>Right-click → Properties → Uncheck "Disable fullscreen optimizations"</p>
+                        <p>Do not use -Vulkan in launch options</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-900 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">Orbit unloads after connecting to a game?</h3>
+                    <div class="space-y-2">
+                        <p>Most likely an outdated nade dataset.</p>
+                        <p>Fix link: <code class="bg-gray-700 px-2 py-1 rounded">https://discord.com/ch
+</html>
